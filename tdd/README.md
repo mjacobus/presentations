@@ -1,9 +1,96 @@
 TDD - Desenvolvimento guiado por testes
 --------------------------------------------------------------------------------
 
+- Todo o bom profissional testa
+  - Normalmente depois
+  - Normalmente na mão
+  - Não existe teste de regressão
+
+  - Regression Test Regression test Regression test is a test that is performed
+    to make sure that previously working functionality still works, after
+    changes elsewhere in the system. Wikipedia article is pretty good at
+    explaining what it is.
+
+  - User stories User stories are part of an agile approach that helps shift
+    the focus from writing about requirements to talking about them. All agile
+    user stories include a written sentence or two and, more importantly, a
+    series of conversations about the desired functionality.
+
 O que é?
+--------------------------------------------------------------------------------
+  - Testes antes do código
+  - deve ser versionado
+
+Tipos de teste
+--------------------------------------------------------------------------------
+  - Teste unitário
+    - Objetos fazem a coisa certa do jeito certo?
+  - Teste de aceitação
+    - Funciona como um todo?
+    - Selenium
+  - Teste de integração
+    Funciona com o código existente?
+
+Processo de software
+
+  Requisitos
+    Projeto
+      Implementa
+        Teste
+          Evolução
+
+  Projeto
+    Implementa
+      Teste
+
+  Projeto
+    Teste
+      Implementa
+
+  Projeto
+    Teste
+      Implementa
+        Teste
+
+  Projeto > Teste > Implementa > Teste
+
+  Projeto
+    Crie uma lista de teste
+    note e identifique os teste
+    seja consiso: uma classe ou método
+    posteriormente, é possível adicionar mais testes
+
+  TDD/Teste
+    Escrevea o teste primeiro
+      pense no design
+      controle o escopo
+    Crie o teste utilizando assertivas
+      teste o que é esperado e o que não é esperado
+
+    implemente o código que deve ser testado
+      faça o mínimo e somente o necessário para que o teste compile e passe
+
+
 
 Por quê?
+--------------------------------------------------------------------------------
+
+Motifica a abordagem tradicional para modelar e analisar
+
+Cria práticas para fornecer apoio ao Test first
+
+Segurança ao modificar
+
+Documentação executável
+
+Baby steps
+
+Detecta erros enquanto o contexto do código ainda está na mente
+
+COnstante revisao
+Qualidade de código
+fraco acoplamento
+
 
 1. Testes te ajudam a criar o design da API da sua classe
 2. Testes te ajudam a criar o design da arquitetura do seu sistema
@@ -11,6 +98,12 @@ Por quê?
 4. Com testes, você tem certeza de que sua aplicação ainda vai funcionar corretamente depois que você mudá-la
 5. Testes documentam a sua API
 6. Testes documentam o seu sistema
+
+
+
+Desafios
+--------------------------------------------------------------------------------
+-
 
 Red Green Refactor
 --------------------------------------------------------------------------------
