@@ -5,6 +5,17 @@ O que é?
 
 Por quê?
 
+1. Testes te ajudam a criar o design da API da sua classe
+2. Testes te ajudam a criar o design da arquitetura do seu sistema
+3. Testes te ajudam a implementar os membros da sua classe
+4. Com testes, você tem certeza de que sua aplicação ainda vai funcionar corretamente depois que você mudá-la
+5. Testes documentam a sua API
+6. Testes documentam o seu sistema
+
+Red Green Refactor
+--------------------------------------------------------------------------------
+![Red Green Refactor](img/rgr.png)
+
 PHPUnit
 --------------------------------------------------------------------------------
 
@@ -120,23 +131,7 @@ class User
 
 Rode o teste
 
-    phpunit tests
-
-    PHPUnit 3.7.32 by Sebastian Bergmann.
-
-    F
-
-    Time: 7 ms, Memory: 6.00Mb
-
-    There was 1 failure:
-
-    1) AppTests\UserTest::testGetCompleteNameReturnsCompleteName
-    Failed asserting that null matches expected 'Jon Doe'.
-
-    /codepath/tests/AppTests/UserTest.php:20
-
-    FAILURES!
-    Tests: 1, Assertions: 1, Failures: 1.
+![red](img/red.png)
 
 Yay! Este é o erro que queriamos ver. Note o "F" no resultado. E note o erro.
 
@@ -171,13 +166,7 @@ class User
 ```
 
 
-    PHPUnit 3.7.32 by Sebastian Bergmann.
-
-    .
-
-    Time: 5 ms, Memory: 5.75Mb
-
-    OK (1 test, 1 assertion)
+![green](img/green.png)
 
 Yay! Agora nosso teste passou. Refatore, rode os testes.
 
@@ -242,11 +231,4 @@ class User
 
 Mas o importante é que ele vai continuar funcionando...
 
-
-    PHPUnit 3.7.32 by Sebastian Bergmann.
-
-    .
-
-    Time: 5 ms, Memory: 5.75Mb
-
-    OK (1 test, 1 assertion)
+![green](img/green.png)
